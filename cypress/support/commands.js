@@ -1,12 +1,12 @@
-Cypress.Commands.add('query', (how) => {
-    cy.request( how, '/user', {
-          id: 1,
-          username: "vssmirnova",
-          firstName: "Viktoria",
-          lastName: "Smirnova",
-          email: "vs96@mail.ru",
-          password: "pass",
-          phone: "+79115645897",
-          userStatus: 1
+Cypress.Commands.add('query', (query, url, id, username, firstName, lastName, email, password, phone, userStatus) => {
+    cy.request( query, url, {
+          id,
+          username,
+          firstName,
+          lastName,
+          email,
+          password,
+          phone,
+          userStatus
     })
 })

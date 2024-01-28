@@ -1,8 +1,9 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: 's67wv9',
   e2e: {
-    baseUrl: "https://petstore.swagger.io/v2/",
+    baseUrl: "https://petstore.swagger.io/v2",
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
